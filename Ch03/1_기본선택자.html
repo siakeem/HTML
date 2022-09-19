@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <title>1_기본선택자</title>
+      <style>
+        /* 전체 선택자 */
+        * {color:red;}
+
+        /* 태그 선택자 -전체 보다 우선순위가 높다*/
+        h3 {color:blue;}
+        span {color:green;}
+
+        /* 클래스 선택자 - .점으로 선언 */
+        .txt {color: orange;}
+
+        /* 아이디 선택자 - #으로 선언 */
+        #txt {color: violet;}
+
+
+      </style>
+</head>
+<body>
+    <h3>기본선택자</h3>
+
+    <span>Hello1</span>
+    <span class="txt">Hello2</span>
+    <span class="txt">Hello3</span>
+    <span id="txt" class ="txt">Hello4</span>
+
+</body>
+</html>
