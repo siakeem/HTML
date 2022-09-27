@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tour</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font: normal 12px "Dotum";
+        }
+        a {
+            text-decoration: none;
+            color: #111;
+        }
+
+        img {
+            border: 0;
+        }
+
+       
+        header {
+            width: 100%;
+            height: 100px;
+            background-color: #fefefe;
+            background-image: url(./img/header_bg.png);
+            background-repeat: repeat-x;
+            background-position: bottom;
+        }
+
+        header .gnb{
+            position: absolute;
+            bottom: 0;
+            width: 1000px;
+            height: 28px;
+            z-index: 10;
+            background: #becedb;
+        }
+        header .gnb > li > a {
+            float: left;
+            display: block;
+            width: 200px;
+            height: 28px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            line-height: 28px;
+            border: 1px solid white;
+            box-sizing: border-box;
+        }
+        .lnb {
+            float: right;
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        #content {
+            padding-top: 28px;
+        }
+        #content > div:nth-child(1){
+            position: absolute;
+        }
+        #content > .mama {
+            position: relative;
+            width: 1000px;
+            height: 620px;
+            margin: 0 auto;
+            background: url(./img/main_bg.png);
+        }
+        main > section > div {
+            float: left;
+            width: 200px;
+            height: 200px;
+        }
+        main > section > div:nth-child(1) {
+            position: relative;
+            background: url(./img/main_box1_bg.png);
+        }
+        section  > div:nth-child(2) {
+            text-align: center;
+            padding-top: 30px;
+            box-sizing: border-box;
+            background: url(./img/main_box2_bg.png);
+        }
+
+        section > div:nth-child(3) {
+            position: relative;
+            text-align: center;
+            padding-top: 30px;
+            box-sizing: border-box;
+            background: url(../img/main_box3_bg.png);
+        }
+        section > div:nth-child(4) {
+            position: relative;
+            padding-top: 30px;
+            box-sizing: border-box;
+            background: url(./img/main_box4_bg.png)
+
+        }
+        section > div:nth-child(5) {
+            position: relative;
+            clear: left;
+            padding-top: 30px;
+            box-sizing: border-box;
+            background: url(./img/main_box5_bg.jpg) no-repeat
+
+        }
+    
+        section > div:nth-child(6) {
+            position: relative;
+            padding-top: 30px;
+            box-sizing: border-box;
+            background: url(./img/main_box6_bg.jpg)  no-repeat
+
+        }
+        section > div:nth-child(7) {
+            clear: left;
+            margin-left: 200px;
+            text-align: center;
+            padding-top: 30px;
+            box-sizing: border-box;
+            background: url(./img/main_box7_bg.png) no-repeat
+
+        }
+
+        section > div:nth-of-type(5) > img:nth-of-type(1) {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        section > div:nth-of-type(6) > img:nth-of-type(1) {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        
+        .box1 > img:nth-child(1) {
+            margin-top: -28px;
+        }
+        .box1 > img:nth-child(2) {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        #gal > a > img {
+            width: 75px;
+            height: 55px;
+        }
+        #latest {
+            width: 1000px;
+            height: 130px;
+            margin: 0 auto;
+            border-top: 1px solid #becedb;
+            padding-top: 20px;
+        }
+        #latest > div {
+            width: 250px;
+            height: 130px;
+            float: left;
+            margin: 0 auto;
+        }
+        #latest > div > img:nth-child(1) {
+            display: block;
+        }
+        footer > #address {
+            border-top: 1px solid #b9cadc;
+        }
+        #address > .log {
+            float: left;
+            padding-top: 14px;
+        }
+        footer > div > p {
+            font-size: 11px;
+            display: inline-block;
+            margin-top: 20px;
+            padding-left: 20px;
+            color: #555;
+            line-height: 20px;
+        }
+        footer > div > p > #copy {
+            display: inline-block;
+            font-family: Verdana;
+            color: rgb(153, 153, 153);
+            padding-top: 4px;
+        }
+        footer > div > p #resort {
+            color: #5d99b5;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div>
+                <img src="./img/header_logo.png" alt="로고">
+                <div class="lnb">
+                    <span>회원가입 |</span>
+                    <span>로그인 |</span>
+                    <span>고객센터</span>
+                </div>
+                <ul class="gnb">
+                    <li><a href="#">INTRODUCTION</a></li>
+                    <li><a href="#">ROOM</a></li>
+                    <li><a href="#">TRAVEL</a></li>
+                    <li><a href="#">INFORMATION</a></li>
+                    <li><a href="#">COMMUNITY</a></li>
+                </ul>
+            </div>
+        </header>
+        <main id="content">
+            <div></div>
+            <section class="mama">
+                <div class="box1">
+                    <img src="./img/main_box1_img.png" alt="나뭇잎">
+                    <img src="./img/main_box1_txt.png" alt="첫번째">
+                </div>
+                <div>
+                    <img src="./img/main_box2_tit.png" alt="두번째1">
+                    <img src="./img/main_box2_txt.png" alt="두번째2">
+                    <img src="./img/main_box2_img.png" alt="두번째3">
+                </div>
+                <div>
+                    <img src="./img/main_box3_hot.png" alt="세번째">
+                    <img src="./img/main_box3_tit.png" alt="세번째2">
+                    <img src="./img/main_box3_txt.png" alt="세번째3">
+                    <img src="./img/main_box3_img.png" alt="세번째4">
+                </div>
+                <div>
+                    <img src="./img/main_box4_tit.png" alt="네번째">
+                    <img src="./img/main_box4_txt.png" alt="네번째2">
+                    <img src="./img/main_box4_img.png" alt="네번째3">
+                </div>
+                <div>
+                    <img src="./img/main_box5_go.png" alt="다섯번째">
+                </div>
+                <div>
+                    <img src="./img/main_box6_go.png" alt="여섯번째">
+                </div>
+                <div>
+                    <img src="./img/main_box7_tit.png" alt="일곱번째">
+                    <img src="./img/main_box7_txt.png" alt="일곱번째2">
+                    <img src="./img/main_box7_img.png" alt="일곱번째3">
+                </div>
+            </section>
+            <article id="latest">
+                <div class="info1">
+                    <img src="./img/info.png" alt="정보">
+                    <img src="./img/happy.png" alt="행복">
+                </div>
+                <div class="info2">
+                    <img src="./img/reser.png" alt="에약">
+                    <table>
+                        <tr>
+                            <td>></td>
+                            <td>이번주말 예약될까요?ㅠㅠ</td>
+                            <td>02-19</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>예약문의합니다.</td>
+                            <td>02-19</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>회사 워크샵 문의</td>
+                            <td>02-19</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>29일~ 31일까지 자스민방 예...</td>
+                            <td>02-19</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="info3">
+                    <img src="./img/notice.png" alt="공지">
+                    <table>
+                        <tr>
+                            <td>></td>
+                            <td>1111</td>
+                            <td>04-11</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>풀장을오픈했어요.</td>
+                            <td>04-19</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>실내 금연 꼭 지켜주세요</td>
+                            <td>04-29</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>복층에서 8세 이하의 아동...</td>
+                            <td>05-01</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="info4">
+                    <img src="./img/gallery.png" alt="갤러리">
+                    <div id="gal">
+                        <a href="#"><img src="./img/main_latest_gallery1.jpg" alt="갤러리1"></a>
+                        <a href="#"><img src="./img/main_latest_gallery2.jpg" alt="갤러리2"></a>
+                        <a href="#"><img src="./img/main_latest_gallery3.jpg" alt="갤러리3"></a>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <div id="address">
+                <img src="./img/footer_logo.png" class="logo" alt="logo">
+                <p>
+                     (주)리조트 | 대표이사: 홍길동 | 소재지: 부산시 금정구 따듯한동 123-1 <br>
+                     Tel: 070-000-0000/ 사업자등록번호: 123-12-12345 <br>
+                     <span id="copy">
+                        Copyright ⓒ (c) Since 2013 <span id="resort">Resort</span>. All ri
+                     </span>
+                </p>
+
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+</html>

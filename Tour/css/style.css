@@ -1,0 +1,92 @@
+/* 태그 초기화*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol {list-style: none;}
+
+#wrapper {
+    width: 100%;
+    height: auto;
+}
+
+
+header {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+header > div {
+    position: relative;
+    width: 1000px;
+    height: 100px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+header > div > ul {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+
+}
+
+header > div > ul > li {
+    float: left;
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+main {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+
+}
+
+main > section {
+    width: 100%;;
+    height: 620px;
+    box-sizing: border-box;
+
+
+}
+
+main > section > div {
+    float: left;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+main > section > div:nth-child(5) {clear: left;}
+main > section > div:nth-child(7) {clear: left; margin-left: 200px;}
+
+main > article {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+}
+
+main > article > div {
+    float: left;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 1000px;
+    height: 100px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
